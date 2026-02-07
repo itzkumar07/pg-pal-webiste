@@ -1,21 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Stats from "./components/Stats/Stats";
+import Rooms from "./components/Rooms/Rooms";
+import Amenities from "./components/Amenities/Amenities";
+import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/add-property" element={<AddProperty />} />
-      </Routes>
-    </BrowserRouter>
+      <Hero />
+      <Stats />
+      <Rooms />
+      <Amenities />
+      <FAQ />
+      <Footer />
+    </>
   );
 }
+
+export default App;
