@@ -1,0 +1,30 @@
+Pg@123456
+---------------------------------------------------------------------------------------------------------------
+✔ User Register
+✔ User Login
+✔ Property Add
+✔ Property List (Home)
+✔ React + PHP Connected
+✔ Real Database
+---------------------------------------------------------------------------------------------------------------
+
+| Login type    | Command      | Use           |
+| ------------- | ------------ | ------------- |
+| root (socket) | `sudo mysql` | admin         |
+| app user      | `pguser`     | backend / PHP |
+
+---------------------------------------------------------------------------------------------------------------
+Frontend (React):
+/home/kumar/FullStakProjects/pg-pal-webiste/pg-pal-frontend
+
+Backend (PHP):
+/home/kumar/FullStakProjects/pg-pal-webiste/pg-pal-backend
+        ↑
+        │ (symlink)
+        ↓
+/var/www/html/pg-pal-backend
+---------------------------------------------------------------------------------------------------------------
+xampp / lampp start
+move folder → htdocs/pg-pal-backend
+---------------------------------------------------------------------------------------------------------------
+
