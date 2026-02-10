@@ -1,0 +1,87 @@
+.amenities-section {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, white 0%, #FAFAFA 100%);
+}
+
+.amenities-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.amenities-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.amenity-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.amenity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(218, 165, 32, 0.15);
+}
+
+.amenity-icon {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.amenity-card:hover .amenity-icon {
+  transform: scale(1.1);
+}
+
+.amenity-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 15px;
+}
+
+.amenity-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .amenities-section {
+    padding: 60px 15px;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .amenity-card {
+    padding: 30px 20px;
+  }
+}

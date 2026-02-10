@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
+import Hero from "./components/Hero/Hero";
+import Stats from "./components/Stats/Stats";
+import Rooms from "./components/Rooms/Rooms";
+import Amenities from "./components/Amenities/Amenities";
+import FAQ from "./components/FAQ/FAQ";
 import SignUp from "./pages/SignUp";
-// import Hero from "./components/";
-// import Stats from "./components/Stats/Stats";
-// import Rooms from "./components/Rooms/Rooms";
-// import Amenities from "./components/Amenities/Amenities";
-// import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/common/Footer";
 
 function App() {
@@ -15,14 +15,11 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            {/* <Hero />
+            <Hero />
             <Stats />
             <Rooms />
             <Amenities />
-            <FAQ /> */}
-            <div style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <h1>Welcome to PG-PAL</h1>
-            </div>
+            <FAQ />
           </>
         } />
         <Route path="/signup" element={<SignUp />} />
